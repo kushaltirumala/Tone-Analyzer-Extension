@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html>
-<head></head>
+<head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+          
+</head>
 <style>
 	body,html {
         font-family: monospace;
-        font-size: 100%;
+        font-size: 20px;
         max-width: 300px;
         height: 200px;
         margin: 0px;
@@ -12,6 +16,7 @@
       }
 
       .header {
+      	font-size: 20px;
         margin: auto;
         text-align: center;
         display: block;
@@ -21,6 +26,15 @@
 <div class="header">
 	<h1>Turn on suggestions?</h1>
 	</div>
+
+<div class="switch" id="iamsslider">
+    <label>
+      Off
+      <input type="checkbox">
+      <span class="lever"></span>
+      On
+    </label>
+  </div>
 
 
 </body>
