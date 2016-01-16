@@ -1,6 +1,6 @@
 {
     "manifest_version": 2,
-    "name": "Magicite",
+    "name": "iams",
     "description": "FB Emoji Chat Suggestions",
     "version": "1.0",
     "browser_action": {
