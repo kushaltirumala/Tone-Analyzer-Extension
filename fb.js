@@ -1,0 +1,7 @@
+function findEmoji() {
+}
+
+
+function suggest() {
+
+}
