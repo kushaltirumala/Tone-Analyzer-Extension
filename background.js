@@ -23,10 +23,14 @@ function getFBText() {
 
 chrome.runtime.onMessage.addListener(
    function(request, sender, sendResponse) {
-     if (request.type == "req") {
-       sendResponse({type: "test"});
+     if (request.type == "hello") {
        text = request.text;
        alert(text);
+       sendResponse({farewell: "test"});
+     }
+
+     if(request.greeting == "hello") {
+     	alert("got the hello" + sender.tab.url);
      }
  });
  
