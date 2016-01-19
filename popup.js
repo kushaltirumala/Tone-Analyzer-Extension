@@ -6,8 +6,8 @@ document.getElementById("iamsslider").addEventListener('click', function(){
 
 
 var emojiMap = {
-	"happy":[":)", ":-)", ";)"]
-	"sad":"",
+	"happy":[":)", ":-)", ";)"],
+	"sad":[":("],
 	"slightlyhorny":[";)", ""],
 	"alexxuhorny":["<3", "luv<3"]
 	//whatever else
@@ -42,8 +42,3 @@ function suggest(text) {
 	findEmoji(key);
 }
 
-if(clicked) {
-	//get most recent fb message store it in msg
-	var msg = null;
-	suggest(msg);
-}
