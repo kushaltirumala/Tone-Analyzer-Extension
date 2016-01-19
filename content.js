@@ -1,3 +1,5 @@
+alert('hi');
+
 function suggest(text) {
 	//make XMLhttpreq and set tone into key
 	
@@ -20,16 +22,10 @@ function suggest(text) {
 var text = null;
 
 
-chrome.runtime.onMessage.addListener(
-  function(request, sender, sendResponse) {
-    if (request.type == "req") {
-      console.log('test sent');
-      sendResponse({type: "test"});
-      text = request.text;
-    }
+chrome.extension.sendRequest({greeting: "hello"}, function(response) {
+  alert(response.farewell);
 });
 
-console.log("I got the text here it is: " + text);
 
 //suggest the thing to the user
 
