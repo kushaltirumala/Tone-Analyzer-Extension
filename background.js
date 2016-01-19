@@ -19,6 +19,7 @@
 
 function getFBText() {
 	return "HI GOT HERE";
+
 }
 
 chrome.runtime.onMessage.addListener(
@@ -26,11 +27,11 @@ chrome.runtime.onMessage.addListener(
      if (request.type == "hello") {
        text = request.text;
        alert(text);
-       sendResponse({farewell: "test"});
      }
 
      if(request.greeting == "hello") {
      	alert("got the hello" + sender.tab.url);
+                sendResponse({farewell: "test"});
      }
  });
  
